@@ -1,0 +1,357 @@
+/* Reset básico y variables de color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Contenedor de Filtros de Marcas */
+.brand-filters {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 0 1rem 0;
+  margin-bottom: 1rem;
+  -webkit-overflow-scrolling: touch; /* Desplazamiento fluido en móviles */
+}
+
+/* Ocultar o estilizar la barra de desplazamiento */
+.brand-filters::-webkit-scrollbar {
+  height: 4px;
+}
+
+.brand-filters::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 4px;
+}
+
+/* Estilos de cada botón de filtro */
+.filter-btn {
+  background-color: #f4f4f4;
+  color: #333333;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0; /* Mantiene el tamaño original sin encogerse */
+}
+
+/* Efecto hover */
+.filter-btn:hover {
+  background-color: #e2e2e2;
+  border-color: #bbb;
+}
+
+/* Estado del botón activo / seleccionado */
+.filter-btn.active {
+  background-color: #111111; /* Cambia este color según el tono principal de tu web */
+  color: #ffffff;
+  border-color: #111111;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+:root {
+  --bg-main: #eff2fa;  /* Fondo claro neutro que combina perfecto con fotos blancas */
+  --bg-header: #000000;     /* Encabezado negro puro para destacar el logo WeltTech */
+  --bg-card: #ffffff;       /* Tarjetas de productos blancas estilo tienda moderna */
+  --text-dark: #111827;     /* Texto principal en tono oscuro muy legible */
+  --text-muted: #6b7280;    /* Texto secundario/etiquetas */
+  --accent-green: #25d366;  /* Verde de acento para el botón de WhatsApp */
+  --accent-green-hover: #1ebd56;
+  --border-color: #e5e7eb;  /* Bordes suaves */
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+/* Header y Navegación (Se mantiene negro elegante) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-header);
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-green);
+  border-bottom: 2px solid var(--accent-green);
+}
+
+/* Banner / Carrusel */
+.hero-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.carousel-container {
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Secciones de Productos */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.category-section {
+  margin-top: 3rem;
+  scroll-margin-top: 5rem;
+}
+
+.category-section h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--bg-header);
+  padding-left: 0.8rem;
+  color: var(--text-dark);
+}
+
+/* Rejilla de Productos (Responsive Grid) */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  background-color: #ffffff; /* Asegura un fondo uniforme para la imagen */
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-dark);
+}
+
+.product-card .tag {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.product-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+/* Botón de Comprar WhatsApp */
+.btn-buy {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-buy:hover {
+  background-color: #25d366; /* Cambia a verde sutil solo al pasar el mouse */
+  color: #ffffff;
+}
+
+.btn-buy:hover {
+  background-color: var(--accent-green-hover);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--bg-header);
+  border-top: 1px solid var(--border-color);
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 768px) {
+  /* 1. Encabezado: Logo arriba, enlaces abajo */
+  .navbar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 1rem 0.5rem !important;
+    gap: 0.75rem !important;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.8rem 1.2rem !important;
+    width: 100% !important;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* 2. Carrusel: Colapso total del espacio blanco */
+  .hero-carousel {
+    padding: 0 !important;
+    margin: 0.5rem auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .carousel-container {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .slide {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .slide img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+  }
+
+
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  .carousel-container {
+    aspect-ratio: 16 / 9;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-card {
+    padding: 0.8rem;
+  }
+
+  .product-card img {
+    height: 130px;
+  }
+
+  .product-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .product-card .price {
+    font-size: 1.1rem;
+  }
+}

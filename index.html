@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeltTech - Tienda Oficial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación Superior -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>WELTTECH</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#telefonos">Teléfonos</a>
+      <a href="#smartwatch">Smartwatch</a>
+      <a href="#audifonos">Audífonos</a>
+      <a href="#accesorios">Accesorios</a>
+    </nav>
+  </header>
+
+  <!-- Carrusel Principal / Banner de Ofertas -->
+  <section class="hero-carousel">
+    <div class="carousel-container">
+      <div class="slide fade">
+        <img src="baner1.png" alt="Promoción WeltTech 1">
+      </div>
+      <div class="slide fade">
+        <img src="baner2.png" alt="Promoción WeltTech 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido Principal por Categorías -->
+  <main class="main-content">
+
+    <!-- Sección: Teléfonos -->
+    <section id="telefonos" class="category-section">
+      <h2>Teléfonos</h2>
+
+      <!-- Filtros por Marca (NUEVA ACTUALIZACIÓN) -->
+      <div class="brand-filters">
+        <button class="filter-btn active" onclick="filterBrand('all', this)">Todos</button>
+        <button class="filter-btn" onclick="filterBrand('apple', this)">Apple</button>
+        <button class="filter-btn" onclick="filterBrand('samsung', this)">Samsung</button>
+        <button class="filter-btn" onclick="filterBrand('xiaomi', this)">Xiaomi</button>
+        <button class="filter-btn" onclick="filterBrand('motorola', this)">Motorola</button>
+        <button class="filter-btn" onclick="filterBrand('honor', this)">Honor</button>
+        <button class="filter-btn" onclick="filterBrand('infinix', this)">Infinix</button>
+        <button class="filter-btn" onclick="filterBrand('tecno', this)">Tecno</button>
+      </div>
+
+      <div class="product-grid" id="phones-grid">
+
+      <!-- IPHONES -->
+ 
+        <!-- Producto 1 -->
+        <div class="product-card" data-brand="apple">
+          <img src="iphone 18 pro max.png" alt="iPhone 18 Pro Max">
+          <h3>iPhone 18 Pro Max</h3>
+          <p class="tag">256 GB - Sellado</p>
+          <p class="price">Q 14, 999</p>
+          <!-- MODIFICA AQUÍ EL NÚMERO Y MENSAJE DE WHATSAPP -->
+          <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20iPhone%2018%20Pro%20Max." target="_blank" class="btn-buy">Comprar</a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card" data-brand="apple">
+          <img src="iphone 17 pro max.png" alt="iPhone 17 Pro Max">
+          <h3>iPhone 17 Pro Max</h3>
+          <p class="tag">256 GB - Silver</p>
+          <p class="price">Q 12, 955</p>
+          <!-- MODIFICA AQUÍ EL NÚMERO Y MENSAJE DE WHATSAPP -->
+          <a href="https://wa.me/50239519480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20iPhone%2017%20Pro%20Max." target="_blank" class="btn-buy">Comprar</a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card" data-brand="apple">
+          <img src="iphone 16 pro max.png" alt="iPhone 16 Pro Max">
+          <h3>iPhone 16 Pro Max</h3>
+          <p class="tag">256 GB - Desert, Gris</p>
+          <p class="price">Q 10, 355</p>
+          <!-- MODIFICA AQUÍ EL NÚMERO Y MENSAJE DE WHATSAPP -->
+          <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20iPhone%2016%20Pro%20Max." target="_blank" class="btn-buy">Comprar</a>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card" data-brand="apple">
+          <img src="iphone 15 pro max.png" alt="iPhone 15 Pro Max">
+          <h3>iPhone 15 Pro Max</h3>
+          <p class="tag">256 GB - Blue, Silver</p>
+          <p class="price">Q 10, 355</p>
+          <!-- MODIFICA AQUÍ EL NÚMERO Y MENSAJE DE WHATSAPP -->
+          <a href="https://wa.me/50239519480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20iPhone%2015%20Pro%20Max." target="_blank" class="btn-buy">Comprar</a>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product-card" data-brand="apple">
+          <img src="iphone 14 pro max.png" alt="iPhone 14 Pro Max">
+          <h3>iPhone 14 Pro Max</h3>
+          <p class="tag">256 GB - Blue, Silver, Purple</p>
+          <p class="price">Q 7, 499</p>
+          <!-- MODIFICA AQUÍ EL NÚMERO Y MENSAJE DE WHATSAPP -->
+          <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20iPhone%2014%20Pro%20Max." target="_blank" class="btn-buy">Comprar</a>
+        </div>
+
+        <!-- SAMSUNG -->
+
+<!-- Producto 5 -->
+<div class="product-card" data-brand="samsung">
+  <img src="SM A07.png" alt="Samsung A07">
+  <h3>Samsung A07</h3>
+  <p class="tag">128 GB - 4 GB - Negro</p>
+  <p class="price">Q 1,099</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20A07." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="samsung">
+  <img src="SM A17.png" alt="Samsung A17">
+  <h3>Samsung A17</h3>
+  <p class="tag">128 GB - 4 GB - Gris, Celeste</p>
+  <p class="price">Q 1,699</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20A17." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="samsung">
+  <img src="SM A27.png" alt="Samsung A27">
+  <h3>Samsung A27</h3>
+  <p class="tag">128 GB - 6 GB - Negro, Rosado</p>
+  <p class="price">Q 2,899</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20A27." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="samsung">
+  <img src="SM A36.png" alt="Samsung A36">
+  <h3>Samsung A36</h3>
+  <p class="tag">256 GB - 8 GB - Negro</p>
+  <p class="price">Q 2,999</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20A36." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="samsung">
+  <img src="SM A37.png" alt="Samsung A37">
+  <h3>Samsung A37</h3>
+  <p class="tag">128 GB - 8 GB - Lavanda, Negro, Verde</p>
+  <p class="price">Q 3,298</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20A37." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="samsung">
+  <img src="SM S23 Ultra.png" alt="Samsung S23 Ultra">
+  <h3>Samsung S23 ULTRA</h3>
+  <p class="tag">256 GB - 12 GB - Cream</p>
+  <p class="price">Q 6,959</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20S23%20Ultra." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="samsung">
+  <img src="SM S25 Ultra.png" alt="Samsung S25 Ultra">
+  <h3>Samsung S25 ULTRA</h3>
+  <p class="tag">512 GB - 12 GB - Cream</p>
+  <p class="price">Q 8,564</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Samsung%20S25%20Ultra." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+
+<!-- XIAOMI -->
+
+<div class="product-card" data-brand="xiaomi">
+  <img src="Redmi A7 pro.png" alt="Xiaomi Redmi A7 Pro">
+  <h3>Redmi A7 Pro</h3>
+  <p class="tag">64 GB - 4 GB - Negro, Azul, Verde</p>
+  <p class="price">Q 959</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Redmi%20A7%20Pro." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="xiaomi">
+  <img src="Redmi 17.png" alt="Xiaomi Redmi 17">
+  <h3>Redmi 17</h3>
+  <p class="tag">128 GB - 4 GB - Negro, Azul, Verde</p>
+  <p class="price">Q 1,570</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Redmi%2017." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="xiaomi">
+  <img src="Redmi Note 15 Pro.png" alt="Xiaomi Redmi Note 15 Pro">
+  <h3>Redmi Note 15 Pro</h3>
+  <p class="tag">256 GB - 8 GB - Negro, Azul</p>
+  <p class="price">Q 2,398</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Redmi%20Note%2015%20Pro." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+
+<!-- MOTOROLA -->
+
+<div class="product-card" data-brand="motorola">
+  <img src="Motorola G17.png" alt="Motorola G17">
+  <h3>Motorola G17</h3>
+  <p class="tag">256 GB - 4 GB - Celeste, Arándano, Rosado</p>
+  <p class="price">Q 1,455</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Motorola%20G17." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+
+<!-- TECNO -->
+
+<div class="product-card" data-brand="tecno">
+  <img src="Tecno Spark GO3.png" alt="Tecno Spark GO3">
+  <h3>Tecno Spark GO3</h3>
+  <p class="tag">65 GB - 4 GB - Negro, Morado, Azul Gris</p>
+  <p class="price">Q 995</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Tecno%20Spark%20GO3." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card" data-brand="tecno">
+  <img src="Teccno Pova Curve 2.png" alt="Tecno Pova Curve 2">
+  <h3>Tecno Pova Curve 2</h3>
+  <p class="tag">256 GB - 8 GB - Morado</p>
+  <p class="price">Q 3,164</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20comprar%20el%20Tecno%20Pova%20Curve%202." target="_blank" class="btn-buy">Comprar</a>
+</div>
+      </div>
+    </section>
+
+    <!-- Sección: Smartwatch -->
+    <section id="smartwatch" class="category-section">
+      <h2>Smartwatch</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+  <img src="Redmi 5 Active.png" alt="Redmi Watch 5 Active">
+  <h3>Redmi Watch 5 Active</h3>
+  <p class="tag">Negro, Gris</p>
+  <p class="price">Q 349</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20el%20Redmi%20Watch%205%20Active." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card">
+  <img src="Redmi 6 Active.png" alt="Redmi Watch 6 Active">
+  <h3>Redmi Watch 6 Active</h3>
+  <p class="tag">Negro</p>
+  <p class="price">Q 425</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20estoy%20interesado%20en%20el%20Redmi%20Watch%206%20Active." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Sección: Audífonos -->
+    <section id="audifonos" class="category-section">
+      <h2>Audífonos</h2>
+      <div class="product-grid">
+
+       <div class="product-card">
+  <img src="1hora Aut-119.png" alt="1Hora AUT119">
+  <h3>1Hora AUT-119</h3>
+  <p class="tag">Inalámbricos Bluetooth - Celeste, Negro, Rosa</p>
+  <p class="price">Q 125</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20quiero%20comprar%20los%20aud%C3%ADfonos%201Hora%20AUT-119." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+
+<div class="product-card">
+  <img src="1hora Aut-212.png" alt="1Hora AUT212">
+  <h3>1Hora AUT-212</h3>
+  <p class="tag">Inalámbricos Bluetooth - Negro</p>
+  <p class="price">Q 149</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20quiero%20comprar%20los%20aud%C3%ADfonos%201Hora%20AUT-212." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+
+<div class="product-card">
+  <img src="1hora Aut-250.png" alt="1Hora AUT250">
+  <h3>1Hora AUT-250</h3>
+  <p class="tag">Inalámbricos Bluetooth - Negro</p>
+  <p class="price">Q 155</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20quiero%20comprar%20los%20aud%C3%ADfonos%201Hora%20AUT-250." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Sección: Accesorios -->
+    <section id="accesorios" class="category-section">
+      <h2>Accesorios</h2>
+      <div class="product-grid">
+
+      <div class="product-card">
+  <img src="Cargador 1Hora V8.png" alt="Cargador 1Hora V8">
+  <h3>Cargador 1Hora V8</h3>
+  <p class="tag">Color: Negro, Blanco</p>
+  <p class="price">Q 50</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20necesito%20el%20Cargador%201Hora%20V8." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card">
+  <img src="Cargador 1Hora Tipo C 20W.png" alt="Cargador 1Hora Tipo C 20W">
+  <h3>Cargador 1Hora Tipo C 20W</h3>
+  <p class="tag">Color: Negro, Blanco</p>
+  <p class="price">Q 55</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20necesito%20el%20Cargador%201Hora%20Tipo%20C%2020W." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card">
+  <img src="Cargador 1Hora Tipo C 30W.png" alt="Cargador 1Hora Tipo C 30W">
+  <h3>Cargador 1Hora Tipo C 30W</h3>
+  <p class="tag">Color: Negro, Blanco</p>
+  <p class="price">Q 60</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20necesito%20el%20Cargador%201Hora%20Tipo%20C%2030W." target="_blank" class="btn-buy">Comprar</a>
+</div>
+
+<div class="product-card">
+  <img src="Cargador Apple iPhone 14 pro max.png" alt="Cargador iPhone 14 Pro Max 25W">
+  <h3>Cargador iPhone 14 Pro Max 25W</h3>
+  <p class="tag">Color: Negro, Blanco</p>
+  <p class="price">Q 125</p>
+  <a href="https://wa.me/50239579480?text=Hola%20WeltTech,%20necesito%20el%20Cargador%20iPhone%2014%20Pro%20Max%2025W." target="_blank" class="btn-buy">Comprar</a>
+</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; WeltTech - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Script para Carrusel Automático
+    let slideIndex = 0;
+    mostrarSlides();
+
+    function mostrarSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex - 1].style.display = "block";  
+      setTimeout(mostrarSlides, 3500); // Cambia la imagen cada 3.5 segundos
+    }
+
+    // Script para Filtro por Marcado de Teléfonos (NUEVA ACTUALIZACIÓN)
+    function filterBrand(brand, button) {
+      // Marcar el botón presionado como activo
+      let buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Filtrar los teléfonos según la marca seleccionada
+      let cards = document.querySelectorAll('#phones-grid .product-card');
+      cards.forEach(card => {
+        if (brand === 'all' || card.getAttribute('data-brand') === brand) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
